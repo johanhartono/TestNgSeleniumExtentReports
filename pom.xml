@@ -15,7 +15,7 @@
 		<extentreports.version>5.0.8</extentreports.version>
 		<allure.version>2.26.0</allure.version>
 		<maven-surefire-plugin-version>3.0.0-M8</maven-surefire-plugin-version>
-		<webdrivermanager.version>5.2.1</webdrivermanager.version>
+		<webdrivermanager.version>5.8.0</webdrivermanager.version>
 		<lombok-version>1.18.26</lombok-version>
 	</properties>
 
