@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-15T01:53:08 WIB" name="Extent Report Demo" finished-at="2024-09-15T01:53:23 WIB" duration-ms="15679">
+  <suite started-at="2024-09-15T10:42:58 WIB" name="Extent Report Demo" finished-at="2024-09-15T10:43:34 WIB" duration-ms="35594">
     <groups>
     </groups>
-    <test started-at="2024-09-15T01:53:08 WIB" name="Login Tests" finished-at="2024-09-15T01:53:23 WIB" duration-ms="15679">
+    <test started-at="2024-09-15T10:42:58 WIB" name="Login Tests" finished-at="2024-09-15T10:43:34 WIB" duration-ms="35594">
       <class name="TestNgSeleniumExtentReports.LoginTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T01:53:08 WIB" name="setup" finished-at="2024-09-15T01:53:20 WIB" duration-ms="12763" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T10:42:58 WIB" name="setup" finished-at="2024-09-15T10:43:29 WIB" duration-ms="30978" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginPageTitle()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T01:53:20 WIB" name="verifyLoginPageTitle" finished-at="2024-09-15T01:53:21 WIB" duration-ms="668" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T10:43:29 WIB" name="verifyLoginPageTitle" finished-at="2024-09-15T10:43:31 WIB" duration-ms="1144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="verifyforgetPasswordLink()[pri:1, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T01:53:21 WIB" name="verifyforgetPasswordLink" finished-at="2024-09-15T01:53:21 WIB" duration-ms="23" status="PASS">
+        <test-method signature="verifyforgetPasswordLink()[pri:1, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T10:43:31 WIB" name="verifyforgetPasswordLink" finished-at="2024-09-15T10:43:31 WIB" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyforgetPasswordLink -->
-        <test-method signature="HomeTest()[pri:2, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T01:53:21 WIB" name="HomeTest" finished-at="2024-09-15T01:53:23 WIB" duration-ms="1969" status="PASS">
+        <test-method signature="HomeTest()[pri:2, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T10:43:31 WIB" name="HomeTest" finished-at="2024-09-15T10:43:31 WIB" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomeTest -->
-        <test-method signature="verifyLinkedIn()[pri:3, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T01:53:23 WIB" name="verifyLinkedIn" finished-at="2024-09-15T01:53:23 WIB" duration-ms="21" status="FAIL">
+        <test-method signature="verifyLinkedIn()[pri:3, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T10:43:31 WIB" name="verifyLinkedIn" finished-at="2024-09-15T10:43:34 WIB" duration-ms="3052" status="FAIL">
           <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
               <![CDATA[invalid selector
@@ -33,9 +33,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [01545f38fbd85bcd1ee095997588d92d, findElement {value=css=a:nth-child(1) > .oxd-icon, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63616}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63616/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 01545f38fbd85bcd1ee095997588d92d]]>
+Command: [72dfb929f37d13f4a730806be8e35b27, findElement {using=css selector, value=css=a:nth-child(1) > .oxd-icon}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53642/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72dfb929f37d13f4a730806be8e35b27]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
@@ -45,9 +45,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [01545f38fbd85bcd1ee095997588d92d, findElement {value=css=a:nth-child(1) > .oxd-icon, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63616}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63616/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 01545f38fbd85bcd1ee095997588d92d
+Command: [72dfb929f37d13f4a730806be8e35b27, findElement {using=css selector, value=css=a:nth-child(1) > .oxd-icon}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53642/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72dfb929f37d13f4a730806be8e35b27
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -103,7 +103,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLinkedIn -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T01:53:23 WIB" name="closeBrowser" finished-at="2024-09-15T01:53:23 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@53f6fd09]" started-at="2024-09-15T10:43:34 WIB" name="closeBrowser" finished-at="2024-09-15T10:43:34 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
