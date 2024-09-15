@@ -9,10 +9,19 @@
       <class name="TestNgSeleniumExtentReports.LoginTests">
         <methods>
           <include name="closeBrowser"/>
-          <include name="HomeTest"/>
+          <include name="verifyLoginPageTitle"/>
           <include name="setup"/>
         </methods>
       </class> <!-- TestNgSeleniumExtentReports.LoginTests -->
     </classes>
   </test> <!-- Login Tests(failed) -->
+  <test thread-count="5" name="HomePage Tests(failed)">
+    <classes>
+      <class name="TestNgSeleniumExtentReports.HomePageTests">
+        <methods>
+          <include name="TestNaviLeftMenu"/>
+        </methods>
+      </class> <!-- TestNgSeleniumExtentReports.HomePageTests -->
+    </classes>
+  </test> <!-- HomePage Tests(failed) -->
 </suite> <!-- Failed suite [Extent Report Demo] -->

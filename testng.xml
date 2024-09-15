@@ -10,7 +10,12 @@
 		<classes>
 			<class name="TestNgSeleniumExtentReports.LoginTests" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+		
+	<test name="HomePage Tests">
+		<classes>
+			<class name="TestNgSeleniumExtentReports.HomePageTests" />
+		</classes>
+	</test> 
+	
+</suite> 
