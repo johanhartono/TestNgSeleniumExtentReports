@@ -23,6 +23,7 @@ public class BaseTests {
         driver.getTitle();
         driver.manage().window().maximize();
        // driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
+        options.addArguments("--headless");
 	}
 
 	@AfterTest

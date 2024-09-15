@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.609 s <<< FAILURE! - in TestSuite
-TestNgSeleniumExtentReports.LoginTests.verifyLinkedIn  Time elapsed: 3.237 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.091 s <<< FAILURE! - in TestSuite
+TestNgSeleniumExtentReports.LoginTests.verifyLinkedIn  Time elapsed: 0.231 s  <<< FAILURE!
 org.openqa.selenium.InvalidSelectorException: 
 invalid selector
 from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
@@ -11,9 +11,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72dfb929f37d13f4a730806be8e35b27, findElement {using=css selector, value=css=a:nth-child(1) > .oxd-icon}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53642/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 72dfb929f37d13f4a730806be8e35b27
+Command: [70863f8019ea47f84d3c545c84bf10d5, findElement {value=css=a:nth-child(1) > .oxd-icon, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53782/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70863f8019ea47f84d3c545c84bf10d5
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
