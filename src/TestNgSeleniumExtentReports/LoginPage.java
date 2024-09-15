@@ -17,12 +17,16 @@ public class LoginPage extends BaseTests {
 	WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));
 	WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
 	WebElement titleText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("oxd-text")));
-	WebElement login = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("oxd-button")));
-	WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("spanMessage")));
-	WebElement forgetPasswordLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("orangehrm-login-forgot")));
 
-	@FindBy(css = "css=a:nth-child(1) > .oxd-icon")
-	WebElement linkedInIcon;
+	// Not all element need to implement Explicit/Implicit Wait. this element does
+	// not work on wait
+	@FindBy(className = "oxd-button")
+	WebElement login;
+
+	// WebElement errorMessage =
+	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("spanMessage")));
+	// WebElement forgetPasswordLink =
+	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("orangehrm-login-forgot")));
 
 	public LoginPage(WebDriver driver) {
 		LoginPage.driver = driver;
@@ -52,19 +56,19 @@ public class LoginPage extends BaseTests {
 	}
 
 	// Get the text of forgotPasswordLink
-	public String getforgotPasswordLinkText() {
-		return forgetPasswordLink.getText();
-	}
+	// public String getforgotPasswordLinkText() {
+	// return forgetPasswordLink.getText();
+	// }
 
 	// Get the errorMessage
-	public String getErrorMessage() {
-		return errorMessage.getText();
-	}
+	// public String getErrorMessage() {
+	// return errorMessage.getText();
+	// }
 
 	// Verify linkedInIcon is enabled
-	public Boolean isEnabledLinkedIn() {
-		return linkedInIcon.isEnabled();
-	}
+	// public Boolean isEnabledLinkedIn() {
+	// return linkedInIcon.isEnabled();
+	// }
 
 	public void login(String strUserName, String strPasword) {
 

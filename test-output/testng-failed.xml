@@ -9,8 +9,6 @@
           <include name="HomeTest"/>
           <include name="verifyLoginPageTitle"/>
           <include name="setup"/>
-          <include name="verifyforgetPasswordLink"/>
-          <include name="verifyLinkedIn"/>
         </methods>
       </class> <!-- TestNgSeleniumExtentReports.LoginTests -->
     </classes>

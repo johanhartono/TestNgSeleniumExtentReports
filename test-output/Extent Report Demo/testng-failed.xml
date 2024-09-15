@@ -9,8 +9,8 @@
       <class name="TestNgSeleniumExtentReports.LoginTests">
         <methods>
           <include name="closeBrowser"/>
+          <include name="HomeTest"/>
           <include name="setup"/>
-          <include name="verifyLinkedIn"/>
         </methods>
       </class> <!-- TestNgSeleniumExtentReports.LoginTests -->
     </classes>

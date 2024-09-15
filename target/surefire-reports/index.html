@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Extent_Report_Demo">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Extent_Report_Demo" title="TestNgSeleniumExtentReports.LoginTests" class="method navigator-link" hash-for-method="verifyLinkedIn">verifyLinkedIn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Extent_Report_Demo" title="TestNgSeleniumExtentReports.LoginTests" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Extent_Report_Demo -->
@@ -118,16 +118,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Extent_Report_Demo" title="TestNgSeleniumExtentReports.LoginTests" class="method navigator-link" hash-for-method="HomeTest">HomeTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Extent_Report_Demo" title="TestNgSeleniumExtentReports.LoginTests" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Extent_Report_Demo" title="TestNgSeleniumExtentReports.LoginTests" class="method navigator-link" hash-for-method="verifyforgetPasswordLink">verifyforgetPasswordLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Extent_Report_Demo -->
@@ -150,19 +140,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLinkedIn">
-                  </a> <!-- verifyLinkedIn -->
-                  <span class="method-name">verifyLinkedIn</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+                  <a name="verifyLoginPageTitle">
+                  </a> <!-- verifyLoginPageTitle -->
+                  <span class="method-name">verifyLoginPageTitle</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;titleText&apos;]&quot;}
   (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [70863f8019ea47f84d3c545c84bf10d5, findElement {value=css=a:nth-child(1) &gt; .oxd-icon, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53782/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 70863f8019ea47f84d3c545c84bf10d5
+Command: [3ed9f2507c8b2ffb4861f182470bedc0, findElement {using=css selector, value=*[name=&apos;titleText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65230}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65230/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ed9f2507c8b2ffb4861f182470bedc0
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -174,11 +163,18 @@ Session ID: 70863f8019ea47f84d3c545c84bf10d5
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:430)
+	at org.openqa.selenium.By$ByName.findElement(By.java:237)
+	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:49)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:81)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.isEnabled(Unknown Source)
-	at TestNgSeleniumExtentReports.LoginPage.isEnabledLinkedIn(LoginPage.java:79)
-	at TestNgSeleniumExtentReports.LoginTests.verifyLinkedIn(LoginTests.java:47)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.getText(Unknown Source)
+	at TestNgSeleniumExtentReports.LoginPage.getLoginTitle(LoginPage.java:55)
+	at TestNgSeleniumExtentReports.LoginTests.verifyLoginPageTitle(LoginTests.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -197,20 +193,6 @@ Session ID: 70863f8019ea47f84d3c545c84bf10d5
                   <a name="HomeTest">
                   </a> <!-- HomeTest -->
                   <span class="method-name">HomeTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginPageTitle">
-                  </a> <!-- verifyLoginPageTitle -->
-                  <span class="method-name">verifyLoginPageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyforgetPasswordLink">
-                  </a> <!-- verifyforgetPasswordLink -->
-                  <span class="method-name">verifyforgetPasswordLink</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,28 +252,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'HomeTest')
+data.setCell(0, 1, 'verifyLoginPageTitle')
 data.setCell(0, 2, 'TestNgSeleniumExtentReports.LoginTests')
-data.setCell(0, 3, 3610);
+data.setCell(0, 3, 1246);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginPageTitle')
+data.setCell(1, 1, 'HomeTest')
 data.setCell(1, 2, 'TestNgSeleniumExtentReports.LoginTests')
-data.setCell(1, 3, 645);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLinkedIn')
-data.setCell(2, 2, 'TestNgSeleniumExtentReports.LoginTests')
-data.setCell(2, 3, 23);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyforgetPasswordLink')
-data.setCell(3, 2, 'TestNgSeleniumExtentReports.LoginTests')
-data.setCell(3, 3, 22);
+data.setCell(1, 3, 295);
 window.suiteTableData['Extent_Report_Demo']= { tableData: data, tableDiv: 'times-div-Extent_Report_Demo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Extent_Report_Demo">
               </div> <!-- times-div-Extent_Report_Demo -->
             </div> <!-- times-div -->
@@ -306,9 +280,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Extent_Report_Demo" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestNgSeleniumExtentReports.LoginTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyLinkedIn</span>
+                <br/>
+                <span class="ignored-method-name">verifyforgetPasswordLink</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Extent_Report_Demo" class="panel">
@@ -323,26 +306,18 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyLoginPageTitle</span>
-                <span class="method-start">19461 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyforgetPasswordLink</span>
-                <span class="method-start">20113 ms</span>
+                <span class="method-start">15696 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">HomeTest</span>
-                <span class="method-start">20136 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLinkedIn</span>
-                <span class="method-start">23747 ms</span>
+                <span class="method-start">17119 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">23978 ms</span>
+                <span class="method-start">17416 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

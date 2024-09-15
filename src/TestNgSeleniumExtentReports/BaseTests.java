@@ -1,7 +1,5 @@
 package TestNgSeleniumExtentReports;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,20 +17,21 @@ public class BaseTests {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-search-engine-choice-screen");
         options.addArguments("--disable-features=OptimizationGuideModelDownloading,OptimizationHintsFetching,OptimizationTargetPrediction,OptimizationHints");
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         driver = new ChromeDriver(options);
         //2.get Browser URL
         driver.get("https://opensource-demo.orangehrmlive.com/");
+        //driver.get("https://johanhartono.my.id/OrangeHR");
         driver.getTitle();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
         
 	}
 
 	@AfterTest
 	public void closeBrowser() {
 
-		driver.close();
+		//driver.close();
 
 	}
 }
