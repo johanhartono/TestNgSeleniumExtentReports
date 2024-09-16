@@ -4,22 +4,13 @@
   <listeners>
     <listener class-name="TestNgSeleniumExtentReports.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Login Tests(failed)">
-    <classes>
-      <class name="TestNgSeleniumExtentReports.LoginTests">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="verifyLoginPageTitle"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- TestNgSeleniumExtentReports.LoginTests -->
-    </classes>
-  </test> <!-- Login Tests(failed) -->
   <test thread-count="5" name="HomePage Tests(failed)">
     <classes>
       <class name="TestNgSeleniumExtentReports.HomePageTests">
         <methods>
+          <include name="closeBrowser"/>
           <include name="TestNaviLeftMenu"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- TestNgSeleniumExtentReports.HomePageTests -->
     </classes>

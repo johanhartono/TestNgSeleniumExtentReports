@@ -2,28 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Extent Report Demo]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
-    <listener class-name="TestNgSeleniumExtentReports.ExtentListeners"/>
+    <listener class-name="setup.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Login Tests(failed)" verbose="0">
-    <classes>
-      <class name="TestNgSeleniumExtentReports.LoginTests">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="verifyLoginPageTitle"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- TestNgSeleniumExtentReports.LoginTests -->
-    </classes>
-  </test> <!-- Login Tests(failed) -->
   <test thread-count="5" name="HomePage Tests(failed)" verbose="0">
     <classes>
-      <class name="TestNgSeleniumExtentReports.HomePageTests">
+      <class name="testrunner.HomePageTests">
         <methods>
           <include name="closeBrowser"/>
-          <include name="TestNaviLeftMenu"/>
+          <include name="TestNaviLeftMenuPIM"/>
           <include name="setup"/>
+          <include name="TestNaviLeftMenuAdmin"/>
         </methods>
-      </class> <!-- TestNgSeleniumExtentReports.HomePageTests -->
+      </class> <!-- testrunner.HomePageTests -->
     </classes>
   </test> <!-- HomePage Tests(failed) -->
 </suite> <!-- Failed suite [Extent Report Demo] -->

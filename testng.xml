@@ -3,19 +3,13 @@
 <suite name="Extent Report Demo">
 
 	<listeners>
-		<listener class-name="TestNgSeleniumExtentReports.ExtentListeners" />
+		<listener class-name="setup.ExtentListeners" />
 	</listeners>
 
-	<test name="Login Tests">
+	<test name="HomePage Tests">
 		<classes>
-			<class name="TestNgSeleniumExtentReports.LoginTests" />
+			<class name="testrunner.HomePageTests" />
 		</classes>
 	</test> 
 		
-	<test name="HomePage Tests">
-		<classes>
-			<class name="TestNgSeleniumExtentReports.HomePageTests" />
-		</classes>
-	</test> 
-	
 </suite> 

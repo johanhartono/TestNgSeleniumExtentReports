@@ -1,150 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-15T19:20:03 WIB" name="Extent Report Demo" finished-at="2024-09-15T19:20:16 WIB" duration-ms="12872">
+  <suite started-at="2024-09-16T18:51:50 WIB" name="Default suite" finished-at="2024-09-16T18:52:14 WIB" duration-ms="23719">
     <groups>
     </groups>
-    <test started-at="2024-09-15T19:20:03 WIB" name="Login Tests" finished-at="2024-09-15T19:20:15 WIB" duration-ms="12473">
-      <class name="TestNgSeleniumExtentReports.LoginTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@24111ef1]" started-at="2024-09-15T19:20:03 WIB" name="setup" finished-at="2024-09-15T19:20:13 WIB" duration-ms="9968" status="PASS">
+    <test started-at="2024-09-16T18:51:50 WIB" name="Default test" finished-at="2024-09-16T18:52:14 WIB" duration-ms="23719">
+      <class name="testrunner.HomePageTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testrunner.HomePageTests@55a147cc]" started-at="2024-09-16T18:51:50 WIB" name="setup" finished-at="2024-09-16T18:51:59 WIB" duration-ms="9621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginPageTitle()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@24111ef1]" started-at="2024-09-15T19:20:13 WIB" name="verifyLoginPageTitle" finished-at="2024-09-15T19:20:14 WIB" duration-ms="659" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='titleText']"}
-  (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c27acd47a5c21db00a019933ed030b8a, findElement {using=css selector, value=*[name='titleText']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51147/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c27acd47a5c21db00a019933ed030b8a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='titleText']"}
-  (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c27acd47a5c21db00a019933ed030b8a, findElement {using=css selector, value=*[name='titleText']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51147/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c27acd47a5c21db00a019933ed030b8a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:430)
-at org.openqa.selenium.By$ByName.findElement(By.java:237)
-at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:49)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:81)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy11.getText(Unknown Source)
-at TestNgSeleniumExtentReports.LoginPage.getLoginTitle(LoginPage.java:55)
-at TestNgSeleniumExtentReports.LoginTests.verifyLoginPageTitle(LoginTests.java:17)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="HomeTest()[pri:2, instance:TestNgSeleniumExtentReports.LoginTests@24111ef1]" started-at="2024-09-15T19:20:14 WIB" name="HomeTest" finished-at="2024-09-15T19:20:15 WIB" duration-ms="1525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomeTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNgSeleniumExtentReports.LoginTests@24111ef1]" started-at="2024-09-15T19:20:15 WIB" name="closeBrowser" finished-at="2024-09-15T19:20:15 WIB" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- TestNgSeleniumExtentReports.LoginTests -->
-    </test> <!-- Login Tests -->
-    <test started-at="2024-09-15T19:20:16 WIB" name="HomePage Tests" finished-at="2024-09-15T19:20:16 WIB" duration-ms="122">
-      <class name="TestNgSeleniumExtentReports.HomePageTests">
-        <test-method signature="TestNaviLeftMenu()[pri:3, instance:TestNgSeleniumExtentReports.HomePageTests@517d4a0d]" started-at="2024-09-15T19:20:16 WIB" name="TestNaviLeftMenu" finished-at="2024-09-15T19:20:16 WIB" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "TestNgSeleniumExtentReports.HomePage.naviLeftAdmin()" because "this.objHomePage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "TestNgSeleniumExtentReports.HomePage.naviLeftAdmin()" because "this.objHomePage" is null
-at TestNgSeleniumExtentReports.HomePageTests.TestNaviLeftMenu(HomePageTests.java:12)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testrunner.HomePageTests@55a147cc]" started-at="2024-09-16T18:52:00 WIB" name="TestNaviLeftMenu" finished-at="2024-09-16T18:52:05 WIB" duration-ms="5835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenu -->
-      </class> <!-- TestNgSeleniumExtentReports.HomePageTests -->
-    </test> <!-- HomePage Tests -->
-  </suite> <!-- Extent Report Demo -->
+        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testrunner.HomePageTests@55a147cc]" started-at="2024-09-16T18:52:05 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-09-16T18:52:08 WIB" duration-ms="3118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuAdmin -->
+        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testrunner.HomePageTests@55a147cc]" started-at="2024-09-16T18:52:08 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-09-16T18:52:10 WIB" duration-ms="1125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuPIM -->
+        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testrunner.HomePageTests@55a147cc]" started-at="2024-09-16T18:52:10 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-09-16T18:52:12 WIB" duration-ms="1903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuLeave -->
+        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testrunner.HomePageTests@55a147cc]" started-at="2024-09-16T18:52:12 WIB" name="TestNaviLeftMenuTime" finished-at="2024-09-16T18:52:14 WIB" duration-ms="2073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuTime -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testrunner.HomePageTests@55a147cc]" started-at="2024-09-16T18:52:14 WIB" name="closeBrowser" finished-at="2024-09-16T18:52:14 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testrunner.HomePageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

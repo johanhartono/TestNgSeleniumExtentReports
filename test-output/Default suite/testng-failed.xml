@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNgSeleniumExtentReports.HomePageTests">
+      <class name="testrunner.HomePageTests">
         <methods>
           <include name="closeBrowser"/>
-          <include name="TestNaviLeftMenu"/>
+          <include name="TestNaviLeftMenuPIM"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- TestNgSeleniumExtentReports.HomePageTests -->
+      </class> <!-- testrunner.HomePageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

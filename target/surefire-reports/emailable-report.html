@@ -9,78 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Extent Report Demo</th></tr>
-<tr><td><a href="#t0">Login Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">30,552</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">HomePage Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">44,178</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">74,730</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">HomePage Tests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">24,771</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Extent Report Demo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestNgSeleniumExtentReports.LoginTests</td><td><a href="#m0">verifyLoginPageTitle</a></td><td rowspan="1">1726402551160</td><td rowspan="1">1188</td></tr><tr><th colspan="4">Login Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNgSeleniumExtentReports.LoginTests</td><td><a href="#m1">HomeTest</a></td><td rowspan="1">1726402552630</td><td rowspan="1">228</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">HomePage Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestNgSeleniumExtentReports.HomePageTests</td><td><a href="#m2">TestNaviLeftMenu</a></td><td rowspan="1">1726402566975</td><td rowspan="1">30410</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Extent Report Demo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HomePage Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">testrunner.HomePageTests</td><td><a href="#m0">TestNaviLeftMenu</a></td><td rowspan="1">1726488126779</td><td rowspan="1">4536</td></tr><tr class="passedeven"><td><a href="#m1">TestNaviLeftMenuAdmin</a></td><td rowspan="1">1726488131328</td><td rowspan="1">5336</td></tr><tr class="passedeven"><td><a href="#m2">TestNaviLeftMenuLeave</a></td><td rowspan="1">1726488137806</td><td rowspan="1">1761</td></tr><tr class="passedeven"><td><a href="#m3">TestNaviLeftMenuPIM</a></td><td rowspan="1">1726488136665</td><td rowspan="1">1139</td></tr><tr class="passedeven"><td><a href="#m4">TestNaviLeftMenuTime</a></td><td rowspan="1">1726488139568</td><td rowspan="1">2066</td></tr></tbody>
 </table>
-<h2>Login Tests</h2><h3 id="m0">TestNgSeleniumExtentReports.LoginTests#verifyLoginPageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;titleText&apos;]&quot;}
-  (Session info: chrome=128.0.6613.138)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2a915ee218ac22a285bea755aaef086d, findElement {value=*[name=&apos;titleText&apos;], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50908}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2a915ee218ac22a285bea755aaef086d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:430)
-	at org.openqa.selenium.By$ByName.findElement(By.java:237)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:49)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:81)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.getText(Unknown Source)
-	at TestNgSeleniumExtentReports.LoginPage.getLoginTitle(LoginPage.java:55)
-	at TestNgSeleniumExtentReports.LoginTests.verifyLoginPageTitle(LoginTests.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestNgSeleniumExtentReports.LoginTests#HomeTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>HomePage Tests</h2><h3 id="m2">TestNgSeleniumExtentReports.HomePageTests#TestNaviLeftMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id=&apos;app&apos;]/div/div/aside/nav/div[2]/ul/li/a (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at TestNgSeleniumExtentReports.HomePage.&lt;init&gt;(HomePage.java:15)
-	at TestNgSeleniumExtentReports.HomePageTests.TestNaviLeftMenu(HomePageTests.java:11)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.138)
-Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [622c5c5842858e660fa508d0e3016799, findElement {value=//div[@id=&apos;app&apos;]/div/div/aside/nav/div[2]/ul/li/a, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50940}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50940/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 622c5c5842858e660fa508d0e3016799
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 32 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>HomePage Tests</h2><h3 id="m0">testrunner.HomePageTests#TestNaviLeftMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testrunner.HomePageTests#TestNaviLeftMenuAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testrunner.HomePageTests#TestNaviLeftMenuLeave</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testrunner.HomePageTests#TestNaviLeftMenuPIM</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testrunner.HomePageTests#TestNaviLeftMenuTime</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
