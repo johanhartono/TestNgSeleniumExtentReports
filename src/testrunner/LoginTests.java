@@ -1,3 +1,5 @@
+//Scenario: Testing Login Page to ensure user name and password entered correctly
+
 package testrunner;
 
 import org.testng.Assert;
