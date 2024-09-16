@@ -28,7 +28,7 @@ public class ExtentManager extends BaseTests{
          
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
-        extent.setSystemInfo("Release No", "22");
+        extent.setSystemInfo("Release No", utils.releaseNumber);
         extent.setSystemInfo("Environment", "QA");
         extent.setSystemInfo("Build no", "B-12673");
                
