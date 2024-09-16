@@ -1,3 +1,5 @@
+//Scenario: Testing all Left Navigation menus to ensure all it works correctly
+
 package testrunner;
 
 import org.testng.Assert;
@@ -31,16 +33,20 @@ public class HomePageTests  extends BaseTests {
 		
 	}
 	@Test(priority = 2, enabled = true)
-	public void TestNaviLeftMenuPIM() throws InterruptedException{
+	public void TestNaviLeftMenuPIM() {
 		HomePage.naviLeftPIM();
 	}
 	@Test(priority = 3, enabled = true)
-	public void TestNaviLeftMenuLeave() throws InterruptedException{
+	public void TestNaviLeftMenuLeave() {
 		HomePage.naviLeftLeave();
 	}
 	
 	@Test(priority = 4, enabled = true)
-	public void TestNaviLeftMenuTime() throws InterruptedException{
+	public void TestNaviLeftMenuTime() {
 		HomePage.naviLeftTime();
+	}
+	@Test(priority = 5, enabled = true)
+	public void TestNaviLeftMenuRecruitment() {
+		HomePage.naviLeftRecruiment();
 	}
 }

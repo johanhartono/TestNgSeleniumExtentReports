@@ -17,6 +17,7 @@ public class HomePage extends LoginTests {
 	//Original elements: <a data-v-6475d26d="" class="oxd-main-menu-item" href="/web/index.php/pim/viewPimModule">
 	//Original elements: <a data-v-6475d26d="" class="oxd-main-menu-item" href="/web/index.php/leave/viewLeaveModule">
 	//Original elements: <a data-v-6475d26d="" class="oxd-main-menu-item" href="/web/index.php/time/viewTimeModule">
+	//Original elements: <a data-v-6475d26d="" class="oxd-main-menu-item" href="/web/index.php/recruitment/viewRecruitmentModule">
 	
 	
 	WebDriverWait wait = new WebDriverWait(BaseTests.driver, Duration.ofSeconds(30));
@@ -31,6 +32,9 @@ public class HomePage extends LoginTests {
 	
 	@FindBy(xpath = "//a[starts-with(@href, '/web/index.php/time/viewTimeModule')]")
 	static WebElement naviLeftTime;
+	
+	@FindBy(xpath = "//a[starts-with(@href, '/web/index.php/recruitment/viewRecruitmentModule')]")
+	static WebElement naviLeftRecruitment;
 
 	public HomePage(WebDriver driver) {
 
@@ -57,4 +61,7 @@ public class HomePage extends LoginTests {
 		return naviLeftAdmin.getText().toString();
 	}
 
+	public static void naviLeftRecruiment() {
+		naviLeftRecruitment.click();
+	}
 }

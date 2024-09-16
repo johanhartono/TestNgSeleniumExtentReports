@@ -9,9 +9,12 @@
       <class name="testrunner.HomePageTests">
         <methods>
           <include name="closeBrowser"/>
+          <include name="TestNaviLeftMenu"/>
           <include name="TestNaviLeftMenuPIM"/>
+          <include name="TestNaviLeftMenuLeave"/>
           <include name="setup"/>
           <include name="TestNaviLeftMenuAdmin"/>
+          <include name="TestNaviLeftMenuTime"/>
         </methods>
       </class> <!-- testrunner.HomePageTests -->
     </classes>
