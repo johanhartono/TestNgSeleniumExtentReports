@@ -10,41 +10,48 @@ import pages.LoginPage;
 import setup.BaseTests;
 import setup.utils;
 
-public class HomePageTests  extends BaseTests {
-	
+public class HomePageTests extends BaseTests {
+
 	HomePage objHomePage;
 	LoginPage objLogin;
-
+	String getPageTitle;
 	@Test(priority = 0, enabled = true)
 	public void TestNaviLeftMenu() throws InterruptedException {
 		objLogin = new LoginPage(driver);
 		objLogin.login(utils.webUserName, utils.webPassword);
 		Thread.sleep(1500);
-		
+
 	}
-	
+
 	@Test(priority = 1, enabled = true)
-	public void TestNaviLeftMenuAdmin() throws InterruptedException  {
+	public void TestNaviLeftMenuAdmin() throws InterruptedException {
 		objHomePage = new HomePage(driver);
 		Thread.sleep(1500);
 		HomePage.naviLeftAdmin();
 		String getLeftNavAdminTitle = HomePage.naviLeftAdminTitle();
 		Assert.assertEquals(getLeftNavAdminTitle, "Admin");
-		
+		getPageTitle = HomePage.getPageTitleAdmin();
+		Assert.assertEquals(getPageTitle,"Admin");
+
 	}
+
 	@Test(priority = 2, enabled = true)
 	public void TestNaviLeftMenuPIM() {
 		HomePage.naviLeftPIM();
+		getPageTitle = HomePage.getPageTitlePIM();
+		Assert.assertEquals(getPageTitle,"PIM");
 	}
+
 	@Test(priority = 3, enabled = true)
 	public void TestNaviLeftMenuLeave() {
 		HomePage.naviLeftLeave();
 	}
-	
+
 	@Test(priority = 4, enabled = true)
 	public void TestNaviLeftMenuTime() {
 		HomePage.naviLeftTime();
 	}
+
 	@Test(priority = 5, enabled = true)
 	public void TestNaviLeftMenuRecruitment() {
 		HomePage.naviLeftRecruiment();

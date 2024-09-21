@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-16T19:52:19 WIB" name="Extent Report Demo" finished-at="2024-09-16T19:52:55 WIB" duration-ms="36558">
+  <suite started-at="2024-09-21T22:34:10 WIB" name="Extent Report Demo" finished-at="2024-09-21T22:34:44 WIB" duration-ms="33893">
     <groups>
     </groups>
-    <test started-at="2024-09-16T19:52:19 WIB" name="HomePage Tests" finished-at="2024-09-16T19:52:55 WIB" duration-ms="36558">
+    <test started-at="2024-09-21T22:34:10 WIB" name="HomePage Tests" finished-at="2024-09-21T22:34:44 WIB" duration-ms="33893">
       <class name="testrunner.HomePageTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-16T19:52:19 WIB" name="setup" finished-at="2024-09-16T19:52:38 WIB" duration-ms="19005" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-21T22:34:10 WIB" name="setup" finished-at="2024-09-21T22:34:29 WIB" duration-ms="18364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-16T19:52:38 WIB" name="TestNaviLeftMenu" finished-at="2024-09-16T19:52:42 WIB" duration-ms="4460" status="PASS">
+        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-21T22:34:29 WIB" name="TestNaviLeftMenu" finished-at="2024-09-21T22:34:35 WIB" duration-ms="6487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenu -->
-        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-16T19:52:42 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-09-16T19:52:50 WIB" duration-ms="7624" status="PASS">
+        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-21T22:34:35 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-09-21T22:34:38 WIB" duration-ms="2839" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuAdmin -->
-        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-16T19:52:50 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-09-16T19:52:51 WIB" duration-ms="914" status="PASS">
+        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-21T22:34:38 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-09-21T22:34:39 WIB" duration-ms="1357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuPIM -->
-        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-16T19:52:51 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-09-16T19:52:52 WIB" duration-ms="1391" status="PASS">
+        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-21T22:34:39 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-09-21T22:34:41 WIB" duration-ms="1570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuLeave -->
-        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-16T19:52:52 WIB" name="TestNaviLeftMenuTime" finished-at="2024-09-16T19:52:54 WIB" duration-ms="1659" status="PASS">
+        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-21T22:34:41 WIB" name="TestNaviLeftMenuTime" finished-at="2024-09-21T22:34:43 WIB" duration-ms="1839" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuTime -->
-        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-16T19:52:54 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-09-16T19:52:55 WIB" duration-ms="1324" status="PASS">
+        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-21T22:34:43 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-09-21T22:34:44 WIB" duration-ms="1401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuRecruitment -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-16T19:52:55 WIB" name="closeBrowser" finished-at="2024-09-16T19:52:55 WIB" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testrunner.HomePageTests@16ce702d]" started-at="2024-09-21T22:34:44 WIB" name="closeBrowser" finished-at="2024-09-21T22:34:44 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
