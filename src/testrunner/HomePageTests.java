@@ -15,6 +15,7 @@ public class HomePageTests extends BaseTests {
 	HomePage objHomePage;
 	LoginPage objLogin;
 	String getPageTitle;
+
 	@Test(priority = 0, enabled = true)
 	public void TestNaviLeftMenu() throws InterruptedException {
 		objLogin = new LoginPage(driver);
@@ -31,29 +32,75 @@ public class HomePageTests extends BaseTests {
 		String getLeftNavAdminTitle = HomePage.naviLeftAdminTitle();
 		Assert.assertEquals(getLeftNavAdminTitle, "Admin");
 		getPageTitle = HomePage.getPageTitleAdmin();
-		Assert.assertEquals(getPageTitle,"Admin");
+		Assert.assertEquals(getPageTitle, "Admin");
 
 	}
 
 	@Test(priority = 2, enabled = true)
-	public void TestNaviLeftMenuPIM() {
+	public void TestNaviLeftMenuPIM() throws InterruptedException {
+		Thread.sleep(1500);
 		HomePage.naviLeftPIM();
 		getPageTitle = HomePage.getPageTitlePIM();
-		Assert.assertEquals(getPageTitle,"PIM");
+		Assert.assertEquals(getPageTitle, "PIM");
 	}
 
 	@Test(priority = 3, enabled = true)
-	public void TestNaviLeftMenuLeave() {
+	public void TestNaviLeftMenuLeave() throws InterruptedException {
+		Thread.sleep(1500);
 		HomePage.naviLeftLeave();
 	}
 
 	@Test(priority = 4, enabled = true)
-	public void TestNaviLeftMenuTime() {
+	public void TestNaviLeftMenuTime() throws InterruptedException {
+		Thread.sleep(1500);
 		HomePage.naviLeftTime();
 	}
 
 	@Test(priority = 5, enabled = true)
-	public void TestNaviLeftMenuRecruitment() {
+	public void TestNaviLeftMenuRecruitment() throws InterruptedException {
+		Thread.sleep(1500);
 		HomePage.naviLeftRecruiment();
+	}
+
+	@Test(priority = 6, enabled = true)
+	public void TestNaviLeftMenuMyInfo() throws InterruptedException {
+		Thread.sleep(1500);
+		HomePage.naviLeftMyInfo();
+	}
+
+	@Test(priority = 7, enabled = true)
+	public void TestNaviLeftMenuPerformance() throws InterruptedException {
+		Thread.sleep(1500);
+		HomePage.naviLeftPerformance();
+	}
+
+	@Test(priority = 8, enabled = true)
+	public void TestNaviLeftDashboard() throws InterruptedException {
+		Thread.sleep(1500);
+		HomePage.naviLeftDashboard();
+	}
+
+	@Test(priority = 9, enabled = true)
+	public void TestNaviLeftDirectory() throws InterruptedException {
+		Thread.sleep(1500);
+		HomePage.naviLeftDirectory();
+	}
+
+	@Test(priority = 12, enabled = true)
+	public void TestNaviLeftMaintenance() throws InterruptedException {
+		Thread.sleep(1500);
+		HomePage.naviLeftMaintenance();
+	}
+
+	@Test(priority = 10, enabled = true)
+	public void TestNaviLeftClaim() throws InterruptedException {
+		Thread.sleep(1500);
+		HomePage.naviLeftClaim();
+	}
+
+	@Test(priority = 11, enabled = true)
+	public void TestNaviLeftBuzz() throws InterruptedException {
+		Thread.sleep(1500);
+		HomePage.naviLeftBuzz();
 	}
 }

@@ -6,8 +6,8 @@
       <class name="testrunner.HomePageTests">
         <methods>
           <include name="closeBrowser"/>
-          <include name="TestNaviLeftMenuPIM"/>
           <include name="setup"/>
+          <include name="TestNaviLeftMaintenance"/>
         </methods>
       </class> <!-- testrunner.HomePageTests -->
     </classes>
