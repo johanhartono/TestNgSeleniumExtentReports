@@ -1,73 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="26" passed="25" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-21T23:48:34 WIB" name="Extent Report Demo" finished-at="2024-09-21T23:49:43 WIB" duration-ms="68741">
+  <suite started-at="2024-09-22T21:54:13 WIB" name="Testing Orang HRM Functionality" finished-at="2024-09-22T21:56:25 WIB" duration-ms="131418">
     <groups>
     </groups>
-    <test started-at="2024-09-21T23:48:34 WIB" name="HomePage Tests" finished-at="2024-09-21T23:49:43 WIB" duration-ms="68741">
+    <test started-at="2024-09-22T21:54:13 WIB" name="HomePage Tests Chrome" finished-at="2024-09-22T21:55:16 WIB" duration-ms="62342">
       <class name="testrunner.HomePageTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:48:34 WIB" name="setup" finished-at="2024-09-21T23:49:05 WIB" duration-ms="30735" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:54:13 WIB" name="setup" finished-at="2024-09-22T21:54:37 WIB" duration-ms="23509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:05 WIB" name="TestNaviLeftMenu" finished-at="2024-09-21T23:49:09 WIB" duration-ms="4663" status="PASS">
+        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:54:37 WIB" name="TestNaviLeftMenu" finished-at="2024-09-22T21:54:43 WIB" duration-ms="5825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenu -->
-        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:09 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-09-21T23:49:14 WIB" duration-ms="4319" status="PASS">
+        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:54:43 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-09-22T21:54:48 WIB" duration-ms="4902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuAdmin -->
-        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:14 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-09-21T23:49:17 WIB" duration-ms="2880" status="PASS">
+        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:54:48 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-09-22T21:54:51 WIB" duration-ms="2920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuPIM -->
-        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:17 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-09-21T23:49:19 WIB" duration-ms="2408" status="PASS">
+        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:54:51 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-09-22T21:54:53 WIB" duration-ms="2387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuLeave -->
-        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:19 WIB" name="TestNaviLeftMenuTime" finished-at="2024-09-21T23:49:21 WIB" duration-ms="2459" status="PASS">
+        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:54:53 WIB" name="TestNaviLeftMenuTime" finished-at="2024-09-22T21:54:55 WIB" duration-ms="2462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuTime -->
-        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:21 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-09-21T23:49:24 WIB" duration-ms="2397" status="PASS">
+        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:54:55 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-09-22T21:54:58 WIB" duration-ms="2453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuRecruitment -->
-        <test-method signature="TestNaviLeftMenuMyInfo()[pri:6, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:24 WIB" name="TestNaviLeftMenuMyInfo" finished-at="2024-09-21T23:49:27 WIB" duration-ms="2671" status="PASS">
+        <test-method signature="TestNaviLeftMenuMyInfo()[pri:6, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:54:58 WIB" name="TestNaviLeftMenuMyInfo" finished-at="2024-09-22T21:55:01 WIB" duration-ms="2879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuMyInfo -->
-        <test-method signature="TestNaviLeftMenuPerformance()[pri:7, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:27 WIB" name="TestNaviLeftMenuPerformance" finished-at="2024-09-21T23:49:29 WIB" duration-ms="2430" status="PASS">
+        <test-method signature="TestNaviLeftMenuPerformance()[pri:7, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:55:01 WIB" name="TestNaviLeftMenuPerformance" finished-at="2024-09-22T21:55:03 WIB" duration-ms="2392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuPerformance -->
-        <test-method signature="TestNaviLeftDashboard()[pri:8, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:29 WIB" name="TestNaviLeftDashboard" finished-at="2024-09-21T23:49:31 WIB" duration-ms="2053" status="PASS">
+        <test-method signature="TestNaviLeftDashboard()[pri:8, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:55:03 WIB" name="TestNaviLeftDashboard" finished-at="2024-09-22T21:55:05 WIB" duration-ms="1988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftDashboard -->
-        <test-method signature="TestNaviLeftDirectory()[pri:9, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:31 WIB" name="TestNaviLeftDirectory" finished-at="2024-09-21T23:49:33 WIB" duration-ms="2042" status="PASS">
+        <test-method signature="TestNaviLeftDirectory()[pri:9, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:55:05 WIB" name="TestNaviLeftDirectory" finished-at="2024-09-22T21:55:07 WIB" duration-ms="1994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftDirectory -->
-        <test-method signature="TestNaviLeftClaim()[pri:10, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:33 WIB" name="TestNaviLeftClaim" finished-at="2024-09-21T23:49:36 WIB" duration-ms="2576" status="PASS">
+        <test-method signature="TestNaviLeftClaim()[pri:10, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:55:07 WIB" name="TestNaviLeftClaim" finished-at="2024-09-22T21:55:10 WIB" duration-ms="2909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftClaim -->
-        <test-method signature="TestNaviLeftBuzz()[pri:11, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:36 WIB" name="TestNaviLeftBuzz" finished-at="2024-09-21T23:49:38 WIB" duration-ms="2014" status="PASS">
+        <test-method signature="TestNaviLeftBuzz()[pri:11, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:55:10 WIB" name="TestNaviLeftBuzz" finished-at="2024-09-22T21:55:12 WIB" duration-ms="2123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftBuzz -->
-        <test-method signature="TestNaviLeftMaintenance()[pri:12, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:38 WIB" name="TestNaviLeftMaintenance" finished-at="2024-09-21T23:49:43 WIB" duration-ms="5026" status="PASS">
+        <test-method signature="TestNaviLeftMaintenance()[pri:12, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:55:12 WIB" name="TestNaviLeftMaintenance" finished-at="2024-09-22T21:55:16 WIB" duration-ms="3447" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/form/div[3]/div/div[2]/input"}
+  (Session info: chrome=128.0.6613.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9df8637896337c4f192a3512c994c47, findElement {using=xpath, value=//*[@id="app"]/div[1]/div[1]/form/div[3]/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57212}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57212/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9df8637896337c4f192a3512c994c47]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/form/div[3]/div/div[2]/input"}
+  (Session info: chrome=128.0.6613.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9df8637896337c4f192a3512c994c47, findElement {using=xpath, value=//*[@id="app"]/div[1]/div[1]/form/div[3]/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.139, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57212}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57212/devtoo..., se:cdpVersion: 128.0.6613.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9df8637896337c4f192a3512c994c47
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at pages.HomePage.naviLeftMaintenance(HomePage.java:122)
+at testrunner.HomePageTests.TestNaviLeftMaintenance(HomePageTests.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMaintenance -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testrunner.HomePageTests@2ea6e30c]" started-at="2024-09-21T23:49:43 WIB" name="closeBrowser" finished-at="2024-09-21T23:49:43 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testrunner.HomePageTests@7a1a3478]" started-at="2024-09-22T21:55:16 WIB" name="closeBrowser" finished-at="2024-09-22T21:55:16 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testrunner.HomePageTests -->
-    </test> <!-- HomePage Tests -->
-  </suite> <!-- Extent Report Demo -->
+    </test> <!-- HomePage Tests Chrome -->
+    <test started-at="2024-09-22T21:55:16 WIB" name="HomePage Tests Edge" finished-at="2024-09-22T21:56:25 WIB" duration-ms="68815">
+      <class name="testrunner.HomePageTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:55:16 WIB" name="setup" finished-at="2024-09-22T21:55:46 WIB" duration-ms="30140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:55:46 WIB" name="TestNaviLeftMenu" finished-at="2024-09-22T21:55:52 WIB" duration-ms="6277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenu -->
+        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:55:52 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-09-22T21:55:55 WIB" duration-ms="2793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuAdmin -->
+        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:55:55 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-09-22T21:55:59 WIB" duration-ms="3800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuPIM -->
+        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:55:59 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-09-22T21:56:02 WIB" duration-ms="2557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuLeave -->
+        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:02 WIB" name="TestNaviLeftMenuTime" finished-at="2024-09-22T21:56:04 WIB" duration-ms="2399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuTime -->
+        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:04 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-09-22T21:56:06 WIB" duration-ms="2368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuRecruitment -->
+        <test-method signature="TestNaviLeftMenuMyInfo()[pri:6, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:06 WIB" name="TestNaviLeftMenuMyInfo" finished-at="2024-09-22T21:56:09 WIB" duration-ms="2575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuMyInfo -->
+        <test-method signature="TestNaviLeftMenuPerformance()[pri:7, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:09 WIB" name="TestNaviLeftMenuPerformance" finished-at="2024-09-22T21:56:11 WIB" duration-ms="2423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMenuPerformance -->
+        <test-method signature="TestNaviLeftDashboard()[pri:8, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:11 WIB" name="TestNaviLeftDashboard" finished-at="2024-09-22T21:56:13 WIB" duration-ms="2018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftDashboard -->
+        <test-method signature="TestNaviLeftDirectory()[pri:9, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:13 WIB" name="TestNaviLeftDirectory" finished-at="2024-09-22T21:56:15 WIB" duration-ms="2020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftDirectory -->
+        <test-method signature="TestNaviLeftClaim()[pri:10, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:15 WIB" name="TestNaviLeftClaim" finished-at="2024-09-22T21:56:18 WIB" duration-ms="2448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftClaim -->
+        <test-method signature="TestNaviLeftBuzz()[pri:11, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:18 WIB" name="TestNaviLeftBuzz" finished-at="2024-09-22T21:56:20 WIB" duration-ms="1994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftBuzz -->
+        <test-method signature="TestNaviLeftMaintenance()[pri:12, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:20 WIB" name="TestNaviLeftMaintenance" finished-at="2024-09-22T21:56:25 WIB" duration-ms="4982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestNaviLeftMaintenance -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testrunner.HomePageTests@33b1c5c5]" started-at="2024-09-22T21:56:25 WIB" name="closeBrowser" finished-at="2024-09-22T21:56:25 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testrunner.HomePageTests -->
+    </test> <!-- HomePage Tests Edge -->
+  </suite> <!-- Testing Orang HRM Functionality -->
 </testng-results>

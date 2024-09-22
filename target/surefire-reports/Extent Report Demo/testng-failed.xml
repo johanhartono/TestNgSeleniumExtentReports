@@ -8,13 +8,21 @@
     <classes>
       <class name="testrunner.HomePageTests">
         <methods>
-          <include name="closeBrowser"/>
+          <include name="TestNaviLeftMenuRecruitment"/>
           <include name="TestNaviLeftMenu"/>
+          <include name="TestNaviLeftDashboard"/>
+          <include name="TestNaviLeftMenuMyInfo"/>
           <include name="TestNaviLeftMenuPIM"/>
-          <include name="TestNaviLeftMenuLeave"/>
           <include name="setup"/>
-          <include name="TestNaviLeftMenuAdmin"/>
           <include name="TestNaviLeftMenuTime"/>
+          <include name="TestNaviLeftBuzz"/>
+          <include name="closeBrowser"/>
+          <include name="TestNaviLeftMenuPerformance"/>
+          <include name="TestNaviLeftClaim"/>
+          <include name="TestNaviLeftDirectory"/>
+          <include name="TestNaviLeftMenuLeave"/>
+          <include name="TestNaviLeftMenuAdmin"/>
+          <include name="TestNaviLeftMaintenance"/>
         </methods>
       </class> <!-- testrunner.HomePageTests -->
     </classes>

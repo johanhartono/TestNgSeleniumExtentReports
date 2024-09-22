@@ -64,7 +64,7 @@ public class HomePage extends LoginTests {
 	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[1]/form/div[3]/div/div[2]/input")
 	static WebElement enterPassword;
 
-	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[1]/form/div[4]/button[1]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[1]/form/div[4]/button[2]")
 	static WebElement btnConfirm;
 
 	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/div/div/button/i")

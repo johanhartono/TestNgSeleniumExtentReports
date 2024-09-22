@@ -4,21 +4,16 @@
   <listeners>
     <listener class-name="setup.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="HomePage Tests(failed)">
+  <test thread-count="5" name="HomePage Tests Edge(failed)">
+    <parameter name="browser" value="edge"/>
     <classes>
       <class name="testrunner.HomePageTests">
         <methods>
-          <include name="TestNaviLeftMenuRecruitment"/>
           <include name="closeBrowser"/>
-          <include name="TestNaviLeftMenu"/>
-          <include name="TestNaviLeftMenuLeave"/>
-          <include name="TestNaviLeftMenuPIM"/>
           <include name="setup"/>
-          <include name="TestNaviLeftMenuAdmin"/>
-          <include name="TestNaviLeftMenuTime"/>
-          <include name="TestLogo"/>
+          <include name="TestNaviLeftMaintenance"/>
         </methods>
       </class> <!-- testrunner.HomePageTests -->
     </classes>
-  </test> <!-- HomePage Tests(failed) -->
+  </test> <!-- HomePage Tests Edge(failed) -->
 </suite> <!-- Failed suite [Extent Report Demo] -->
