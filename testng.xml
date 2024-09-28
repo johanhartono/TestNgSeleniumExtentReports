@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Testing Orang HRM Functionality">
+<suite name="Testing Orang HRM Functionality" parallel="false"  thread-count="5">
 
 	<listeners>
 		<listener class-name="setup.ExtentListeners" />
