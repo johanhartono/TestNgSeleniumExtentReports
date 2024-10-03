@@ -3,25 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testrunner.HomePageTests">
+      <class name="testrunner.LoginTests">
         <methods>
-          <include name="TestNaviLeftMenuRecruitment"/>
-          <include name="TestNaviLeftMenu"/>
-          <include name="TestNaviLeftDashboard"/>
-          <include name="TestNaviLeftMenuMyInfo"/>
-          <include name="TestNaviLeftMenuPIM"/>
-          <include name="setup"/>
-          <include name="TestNaviLeftMenuTime"/>
-          <include name="TestNaviLeftBuzz"/>
+          <include name="HomeTest"/>
+          <include name="verifyLoginPageTitle"/>
           <include name="closeBrowser"/>
-          <include name="TestNaviLeftMenuPerformance"/>
-          <include name="TestNaviLeftClaim"/>
-          <include name="TestNaviLeftMenuLeave"/>
-          <include name="TestNaviLeftDirectory"/>
-          <include name="TestNaviLeftMenuAdmin"/>
-          <include name="TestNaviLeftMaintenance"/>
+          <include name="openWeb"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testrunner.HomePageTests -->
+      </class> <!-- testrunner.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

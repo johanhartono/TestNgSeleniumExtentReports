@@ -12,10 +12,16 @@ import setup.BaseTests;
 public class LoginTests extends BaseTests {
 
 	LoginPage objLogin;
+	String exptectedTitle = "ERP";
+	String actualTitle;
+	
 	
 	@Test(priority = 0, enabled = true)
 	public void openWeb () {
 		objLogin = new LoginPage(BaseTests.driver);
+		actualTitle = BaseTests.driver.getTitle();
+		Assert.assertEquals(actualTitle, exptectedTitle);
+		//System.out.println("title is incorrect");
 	}
 
 	@Test(priority = 1, enabled = true)

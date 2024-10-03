@@ -4,6 +4,30 @@
   <listeners>
     <listener class-name="setup.ExtentListeners"/>
   </listeners>
+  <test thread-count="5" name="HomePage Tests Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testrunner.HomePageTests">
+        <methods>
+          <include name="TestNaviLeftMenuRecruitment"/>
+          <include name="TestNaviLeftMenu"/>
+          <include name="TestNaviLeftDashboard"/>
+          <include name="TestNaviLeftMenuMyInfo"/>
+          <include name="TestNaviLeftMenuPIM"/>
+          <include name="setup"/>
+          <include name="TestNaviLeftMenuTime"/>
+          <include name="TestNaviLeftBuzz"/>
+          <include name="closeBrowser"/>
+          <include name="TestNaviLeftMenuPerformance"/>
+          <include name="TestNaviLeftClaim"/>
+          <include name="TestNaviLeftDirectory"/>
+          <include name="TestNaviLeftMenuLeave"/>
+          <include name="TestNaviLeftMenuAdmin"/>
+          <include name="TestNaviLeftMaintenance"/>
+        </methods>
+      </class> <!-- testrunner.HomePageTests -->
+    </classes>
+  </test> <!-- HomePage Tests Chrome(failed) -->
   <test thread-count="5" name="HomePage Tests Edge(failed)">
     <parameter name="browser" value="edge"/>
     <classes>

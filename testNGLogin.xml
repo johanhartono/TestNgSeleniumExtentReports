@@ -7,10 +7,11 @@
 	</listeners>
 
 	<test name="Login Tests">
+		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="testrunner.LoginTests" />
 		</classes>
-	</test> 
-		
-	
+	</test>
+
+
 </suite> 

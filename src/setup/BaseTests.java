@@ -28,29 +28,29 @@ public class BaseTests {
 			// options.addArguments("--headless"); // for github CLI
 			driver = new ChromeDriver(options);
 			// 2.get Browser URL
-			driver.get("https://opensource-demo.orangehrmlive.com/");
+			driver.get(utils.webUrl);
 			driver.getTitle();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
-		} else if (browser.equalsIgnoreCase("firefox")) {
+		} /*else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
-			driver.get("https://opensource-demo.orangehrmlive.com/");
+			driver.get("utils.webUrl");
 			driver.getTitle();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 		} else if (browser.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
-			driver.get("https://opensource-demo.orangehrmlive.com/");
+			driver.get("utils.webUrl");
 			driver.getTitle();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
-		}
+		} */
 	}
 
 	@AfterTest
 	public void closeBrowser() {
 
-		// driver.close();
+		driver.close();
 
 	}
 }

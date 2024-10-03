@@ -5,12 +5,11 @@
     <listener class-name="setup.ExtentListeners"/>
   </listeners>
   <test thread-count="5" name="Login Tests(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testrunner.LoginTests">
         <methods>
-          <include name="HomeTest"/>
           <include name="closeBrowser"/>
-          <include name="verifyLoginPageTitle"/>
           <include name="openWeb"/>
           <include name="setup"/>
         </methods>

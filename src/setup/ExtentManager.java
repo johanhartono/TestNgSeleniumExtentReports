@@ -38,7 +38,7 @@ public class ExtentManager extends BaseTests{
      
     public static void captureScreenshot() {
          
-        TakesScreenshot screenshot = (TakesScreenshot)driver;
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
            
         // Call method to capture screenshot
         File src = screenshot.getScreenshotAs(OutputType.FILE);
