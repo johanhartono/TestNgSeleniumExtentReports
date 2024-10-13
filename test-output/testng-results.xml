@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-13T22:09:41 WIB" name="Testing Orang HRM Functionality" finished-at="2024-10-13T22:10:35 WIB" duration-ms="53884">
+  <suite started-at="2024-10-13T22:23:16 WIB" name="Extent Report Demo" finished-at="2024-10-13T22:23:27 WIB" duration-ms="11545">
     <groups>
-      <group name="Dashboard">
-        <method signature="HomePageTests.TestDashBoardLabel()[pri:13, instance:testcases.HomePageTests@93cf163]" name="TestDashBoardLabel" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestDashBoardDropDownMenu()[pri:14, instance:testcases.HomePageTests@93cf163]" name="TestDashBoardDropDownMenu" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestDashBoardDropDownMenuChangePassword()[pri:16, instance:testcases.HomePageTests@93cf163]" name="TestDashBoardDropDownMenuChangePassword" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestDashBoardDropDownMenuLogout()[pri:17, instance:testcases.HomePageTests@93cf163]" name="TestDashBoardDropDownMenuLogout" class="testcases.HomePageTests"/>
-      </group> <!-- Dashboard -->
-      <group name="Testing Navi Left Menu functionality">
-        <method signature="HomePageTests.TestNaviLeftMenu()[pri:0, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMenu" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftMenuAdmin()[pri:1, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMenuAdmin" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftMenuPIM()[pri:2, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMenuPIM" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftMenuLeave()[pri:3, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMenuLeave" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftMenuTime()[pri:4, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMenuTime" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftMenuRecruitment()[pri:5, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMenuRecruitment" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftMenuMyInfo()[pri:6, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMenuMyInfo" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftMenuPerformance()[pri:7, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMenuPerformance" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftDashboard()[pri:8, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftDashboard" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftDirectory()[pri:9, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftDirectory" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftClaim()[pri:10, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftClaim" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftBuzz()[pri:11, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftBuzz" class="testcases.HomePageTests"/>
-        <method signature="HomePageTests.TestNaviLeftMaintenance()[pri:12, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMaintenance" class="testcases.HomePageTests"/>
-      </group> <!-- Testing Navi Left Menu functionality -->
     </groups>
-    <test started-at="2024-10-13T22:09:41 WIB" name="HomePage Tests" finished-at="2024-10-13T22:10:35 WIB" duration-ms="53884">
-      <class name="testcases.HomePageTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:09:41 WIB" name="setup" finished-at="2024-10-13T22:09:45 WIB" duration-ms="3720" status="PASS">
+    <test started-at="2024-10-13T22:23:16 WIB" name="Login Tests" finished-at="2024-10-13T22:23:27 WIB" duration-ms="11545">
+      <class name="testcases.LoginTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.LoginTests@6bbe2511]" started-at="2024-10-13T22:23:16 WIB" name="setup" finished-at="2024-10-13T22:23:19 WIB" duration-ms="3586" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,79 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:09:45 WIB" name="TestNaviLeftMenu" finished-at="2024-10-13T22:09:47 WIB" duration-ms="1921" status="PASS">
+        <test-method signature="openWeb()[pri:0, instance:testcases.LoginTests@6bbe2511]" started-at="2024-10-13T22:23:19 WIB" name="openWeb" description="get Page Title" finished-at="2024-10-13T22:23:24 WIB" duration-ms="5059" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestNaviLeftMenu -->
-        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:09:47 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-10-13T22:09:51 WIB" duration-ms="3757" status="PASS">
+        </test-method> <!-- openWeb -->
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:testcases.LoginTests@6bbe2511]" started-at="2024-10-13T22:23:24 WIB" name="verifyLoginPageTitle" description="Validate Login Page Title Label" finished-at="2024-10-13T22:23:25 WIB" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestNaviLeftMenuAdmin -->
-        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:09:51 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-10-13T22:09:53 WIB" duration-ms="2876" status="PASS">
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method signature="verifyCoyRight()[pri:2, instance:testcases.LoginTests@6bbe2511]" started-at="2024-10-13T22:23:25 WIB" name="verifyCoyRight" description="Validate Login Page Copyright Label" finished-at="2024-10-13T22:23:26 WIB" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestNaviLeftMenuPIM -->
-        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:09:53 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-10-13T22:09:56 WIB" duration-ms="2235" status="PASS">
+        </test-method> <!-- verifyCoyRight -->
+        <test-method signature="LoginTest()[pri:5, instance:testcases.LoginTests@6bbe2511]" started-at="2024-10-13T22:23:26 WIB" name="LoginTest" description="Login using valid credentials username and password" finished-at="2024-10-13T22:23:27 WIB" duration-ms="772" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestNaviLeftMenuLeave -->
-        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:09:56 WIB" name="TestNaviLeftMenuTime" finished-at="2024-10-13T22:09:58 WIB" duration-ms="2217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftMenuTime -->
-        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:09:58 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-10-13T22:10:00 WIB" duration-ms="2220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftMenuRecruitment -->
-        <test-method signature="TestNaviLeftMenuMyInfo()[pri:6, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:00 WIB" name="TestNaviLeftMenuMyInfo" finished-at="2024-10-13T22:10:03 WIB" duration-ms="2705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftMenuMyInfo -->
-        <test-method signature="TestNaviLeftMenuPerformance()[pri:7, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:03 WIB" name="TestNaviLeftMenuPerformance" finished-at="2024-10-13T22:10:06 WIB" duration-ms="3159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftMenuPerformance -->
-        <test-method signature="TestNaviLeftDashboard()[pri:8, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:06 WIB" name="TestNaviLeftDashboard" finished-at="2024-10-13T22:10:08 WIB" duration-ms="1944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftDashboard -->
-        <test-method signature="TestNaviLeftDirectory()[pri:9, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:08 WIB" name="TestNaviLeftDirectory" finished-at="2024-10-13T22:10:10 WIB" duration-ms="2077" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftDirectory -->
-        <test-method signature="TestNaviLeftClaim()[pri:10, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:10 WIB" name="TestNaviLeftClaim" finished-at="2024-10-13T22:10:12 WIB" duration-ms="2141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftClaim -->
-        <test-method signature="TestNaviLeftBuzz()[pri:11, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:12 WIB" name="TestNaviLeftBuzz" finished-at="2024-10-13T22:10:14 WIB" duration-ms="1921" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftBuzz -->
-        <test-method signature="TestNaviLeftMaintenance()[pri:12, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:14 WIB" name="TestNaviLeftMaintenance" finished-at="2024-10-13T22:10:20 WIB" duration-ms="5882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestNaviLeftMaintenance -->
-        <test-method signature="TestDashBoardLabel()[pri:13, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:20 WIB" name="TestDashBoardLabel" finished-at="2024-10-13T22:10:20 WIB" duration-ms="437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestDashBoardLabel -->
-        <test-method signature="TestDashBoardDropDownMenu()[pri:14, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:20 WIB" name="TestDashBoardDropDownMenu" finished-at="2024-10-13T22:10:20 WIB" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestDashBoardDropDownMenu -->
-        <test-method signature="TestDashBoardDropDownMenuChangePassword()[pri:16, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:21 WIB" name="TestDashBoardDropDownMenuChangePassword" finished-at="2024-10-13T22:10:29 WIB" duration-ms="8561" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestDashBoardDropDownMenuChangePassword -->
-        <test-method signature="TestDashBoardDropDownMenuLogout()[pri:17, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:29 WIB" name="TestDashBoardDropDownMenuLogout" finished-at="2024-10-13T22:10:35 WIB" duration-ms="5947" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestDashBoardDropDownMenuLogout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-13T22:10:35 WIB" name="closeBrowser" finished-at="2024-10-13T22:10:35 WIB" duration-ms="1" status="PASS">
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.LoginTests@6bbe2511]" started-at="2024-10-13T22:23:27 WIB" name="closeBrowser" finished-at="2024-10-13T22:23:27 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.HomePageTests -->
-    </test> <!-- HomePage Tests -->
-  </suite> <!-- Testing Orang HRM Functionality -->
+      </class> <!-- testcases.LoginTests -->
+    </test> <!-- Login Tests -->
+  </suite> <!-- Extent Report Demo -->
 </testng-results>
