@@ -10,7 +10,8 @@
       <class name="testrunner.LoginTests">
         <methods>
           <include name="closeBrowser"/>
-          <include name="openWeb"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="verifyCoyRight"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testrunner.LoginTests -->

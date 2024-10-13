@@ -1,6 +1,6 @@
 //Scenario: Testing Login Page to ensure user name and password entered correctly
 
-package testrunner;
+package testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,49 +12,40 @@ import setup.BaseTests;
 public class LoginTests extends BaseTests {
 
 	LoginPage objLogin;
-	String exptectedTitle = "ERP";
+	String exptectedTitle = "OrangeHRM";
 	String actualTitle;
-	
-	
-	@Test(priority = 0, enabled = true)
-	public void openWeb () {
+	String expectedCopyRight = "OrangeHRM OS 5.7";
+
+	@Test(priority = 0, enabled = true, description = "get Page Title")
+	public void openWeb() throws InterruptedException {
 		objLogin = new LoginPage(BaseTests.driver);
+		Thread.sleep(5000);
 		actualTitle = BaseTests.driver.getTitle();
 		Assert.assertEquals(actualTitle, exptectedTitle);
-		//System.out.println("title is incorrect");
 	}
 
-	@Test(priority = 1, enabled = true)
-	public void verifyLoginPageTitle() {
-
-		// Create Login Page object
-		
-
-		// Verify login page text
+	@Test(priority = 1, enabled = true, description = "Validate Login Page Title Label")
+	public void verifyLoginPageTitle() throws Throwable {
+		Thread.sleep(1000);
 		String loginPageTitle = objLogin.getLoginTitle();
 		Assert.assertTrue(loginPageTitle.contains("Login"));
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true, description = "Validate Login Page Copyright Label")
+	public void verifyCoyRight() throws Throwable {
+		Thread.sleep(1000);
+		String CopyRight = objLogin.getCopyRight();
+		Assert.assertTrue(CopyRight.contains(expectedCopyRight));
+	}
+
+	@Test(priority = 3, enabled = false)
 	public void verifyforgetPasswordLink() {
 
 		// String expectedText= objLogin.getforgotPasswordLinkText();
 		// Assert.assertTrue(expectedText.contains("Forgot your password?"));
 
 	}
-
-	@Test(priority = 3, enabled = true)
-	public void HomeTest()  {
-
-		// login to application
-		//objLogin = new LoginPage(BaseTests.driver);
-		objLogin.login(utils.webUserName, utils.webPassword);
-		// String expectedError = objLogin.getErrorMessage();
-
-		// Verify home page
-		// Assert.assertTrue(expectedError.contains("Username cannot be empty"));
-	}
-
+	
 	@Test(priority = 4, enabled = false)
 	public void verifyLinkedIn() {
 
@@ -65,5 +56,11 @@ public class LoginTests extends BaseTests {
 		// throw new SkipException("Skipping this exception");
 	}
 	
+	@Test(priority = 5, enabled = true, description = "Login using valid credentials username and password")
+	public void LoginTest() {
+		objLogin.login(utils.webUserName, utils.webPassword);
+	}
+
+
 
 }

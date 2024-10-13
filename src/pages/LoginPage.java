@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import setup.BaseTests;
 
@@ -16,16 +17,30 @@ public class LoginPage extends BaseTests {
 	
 	WebDriverWait wait = new WebDriverWait(BaseTests.driver, Duration.ofSeconds(30));
 
-	WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));
-	WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
+	//WebElement Username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Username']")));
+	//WebElement Password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Password']")));
+	@FindBy(xpath = "//input[@placeholder='Username']")
+	WebElement Username;
 
-	// Not all element need to implement Explicit/Implicit Wait. this element does
-	// not work on wait
-	@FindBy(className = "oxd-text")
+	@FindBy(xpath = "//input[@placeholder='Password']")
+	WebElement Password;
+	
+	@FindBy(xpath="//h5[normalize-space()='Login']")
 	WebElement titleText;
+	
+	@FindBy(xpath= "//img[@alt='company-branding']")
+	WebElement companyBranding;
+	
+	@FindBy(xpath="//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']")
+	WebElement orangeLogo;
 	
 	@FindBy(className = "oxd-button")
 	WebElement login;
+	
+	@FindBy(css = "div[class='orangehrm-login-footer'] p:nth-child(1)")
+	WebElement copyRight;
+	
+
 	
 	// WebElement errorMessage =
 	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("spanMessage")));
@@ -38,15 +53,20 @@ public class LoginPage extends BaseTests {
 		// This initElements method will create all WebElements
 		PageFactory.initElements(driver, this);
 	}
-
+	public  void getcompanyBranding() {
+		Assert.assertEquals(true, companyBranding.isDisplayed());
+	}
+	public  void getOrangeLogo() {
+		Assert.assertEquals(true, orangeLogo.isDisplayed());
+	}
 	// Set user name in textbox
 	public void setUserName(String strUserName) {
-		username.sendKeys(strUserName);
+		Username.sendKeys(strUserName);
 	}
 
 	// Set password in password textbox
 	public void setPassword(String strPassword) {
-		password.sendKeys(strPassword);
+		Password.sendKeys(strPassword);
 	}
 
 	// Click on login button
@@ -58,7 +78,10 @@ public class LoginPage extends BaseTests {
 	public String getLoginTitle() {
 		return titleText.getText();
 	}
-
+	//Get Copyright
+	public String getCopyRight() {
+		return copyRight.getText();
+	}
 	// Get the text of forgotPasswordLink
 	// public String getforgotPasswordLinkText() {
 	// return forgetPasswordLink.getText();

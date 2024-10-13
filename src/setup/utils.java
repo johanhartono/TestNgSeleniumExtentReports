@@ -1,8 +1,8 @@
 package setup;
 
 public class utils {
-	public static String webUserName = "Admin";
-	public static String webPassword = "admin123";
+	public static String webUserName = "admin";
+	public static String webPassword = "Jolin@2021";
 	public static String releaseNumber = "22";
-	public static String webUrl ="use your own web. do not user any web that unauthorized/not permitted.";
+	public static String webUrl ="https://johanhartono.my.id/OrangeHR";
 }

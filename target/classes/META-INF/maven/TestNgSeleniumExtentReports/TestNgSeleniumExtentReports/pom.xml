@@ -13,7 +13,6 @@
 		<testng.version>7.10.2</testng.version>
 		<log4j-version>2.19.0</log4j-version>
 		<extentreports.version>5.0.8</extentreports.version>
-		<allure.version>2.26.0</allure.version>
 		<maven-surefire-plugin-version>3.0.0-M8</maven-surefire-plugin-version>
 		<webdrivermanager.version>5.8.0</webdrivermanager.version>
 		<webdrivermanager1.version>4.25.0</webdrivermanager1.version>
