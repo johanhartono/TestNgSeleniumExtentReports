@@ -25,31 +25,22 @@ public class BaseTests {
 			options.addArguments("--disable-search-engine-choice-screen");
 			options.addArguments(
 					"--disable-features=OptimizationGuideModelDownloading,OptimizationHintsFetching,OptimizationTargetPrediction,OptimizationHints");
-			// options.addArguments("--headless"); // for github CLI
-			driver = new ChromeDriver(options);
-			driver.get(utils.webUrl);
-			driver.getTitle();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+			// options.addArguments("--headless"); // for github CLI/linux/others without GUI
+			//System.setProperty("webdriver.chrome.driver","D:\\WebDriver\\chromedriver.exe");
+			driver = new ChromeDriver(options);			
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
-			driver.get("https://www.johanhartono.my.id/OrangeHR");
-			driver.getTitle();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 		} else if (browser.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
-			driver.get("https://www.johanhartono.my.id/OrangeHR");
-			driver.getTitle();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 		} 
+		driver.get(utils.webUrl);
+		driver.getTitle();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 	}
 
 	@AfterTest
 	public void closeBrowser() {
-
 		//driver.close();
-
 	}
 }

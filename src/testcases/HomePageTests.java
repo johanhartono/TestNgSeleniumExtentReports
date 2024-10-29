@@ -41,6 +41,8 @@ public class HomePageTests extends BaseTests {
 		HomePage.naviLeftPIM();
 		getPageTitle = HomePage.getPageTitlePIM();
 		Assert.assertEquals(getPageTitle, "PIM");
+		//Make sure the links is correct page
+		Assert.assertEquals(HomePage.getDashLabelPIM(), "PIM");
 		System.out.println(HomePage.getHomePageLogo());
 		
 	}
@@ -113,6 +115,7 @@ public class HomePageTests extends BaseTests {
 	public void TestDashBoardLabel() throws InterruptedException {
 		Assert.assertEquals(HomePage.getDashLabel(), "Dashboard");
 	}
+
 	@Test(priority = 14, enabled = true, groups = "Dashboard")
 	public void TestDashBoardDropDownMenu() throws InterruptedException {
 		HomePage.dashDropDown();

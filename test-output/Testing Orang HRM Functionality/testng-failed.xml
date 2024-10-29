@@ -9,9 +9,25 @@
     <classes>
       <class name="testcases.HomePageTests">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="TestDashBoardDropDownMenuLogout"/>
+          <include name="TestNaviLeftMenuAdmin"/>
+          <include name="TestNaviLeftMenuPIM"/>
+          <include name="TestNaviLeftDirectory"/>
+          <include name="TestNaviLeftMaintenance"/>
           <include name="setup"/>
+          <include name="TestNaviLeftClaim"/>
+          <include name="TestNaviLeftMenuPerformance"/>
+          <include name="TestNaviLeftMenuLeave"/>
+          <include name="TestNaviLeftMenu"/>
+          <include name="TestNaviLeftMenuTime"/>
+          <include name="closeBrowser"/>
+          <include name="TestNaviLeftBuzz"/>
+          <include name="TestNaviLeftMenuRecruitment"/>
+          <include name="TestDashBoardDropDownMenuLogout"/>
+          <include name="TestNaviLeftDashboard"/>
+          <include name="TestNaviLeftMenuMyInfo"/>
+          <include name="TestDashBoardLabel"/>
+          <include name="TestDashBoardDropDownMenu"/>
+          <include name="TestDashBoardDropDownMenuChangePassword"/>
         </methods>
       </class> <!-- testcases.HomePageTests -->
     </classes>

@@ -75,6 +75,9 @@ public class HomePage extends LoginTests {
 
 	@FindBy(xpath = "//h6[normalize-space()='Dashboard']")
 	static WebElement dashLabel;
+	
+	@FindBy(xpath = "//h6[normalize-space()='PIM']")
+	static WebElement dashLabelPIM;
 
 	@FindBy(xpath = "//span[@class='oxd-userdropdown-tab']")
 	static WebElement dashDropDown;
@@ -179,7 +182,9 @@ public class HomePage extends LoginTests {
 	public static String getDashLabel() {
 		return dashLabel.getText();
 	}
-
+	public static String getDashLabelPIM() {
+		return dashLabelPIM.getText();
+	}
 	public static void dashDropDown() {
 		dashDropDown.click();
 	}
