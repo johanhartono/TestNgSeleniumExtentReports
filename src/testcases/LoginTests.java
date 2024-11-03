@@ -14,9 +14,10 @@ public class LoginTests extends BaseTests {
 
 	@Test(priority = 1, enabled = true, description = "Login using valid credentials username and password")
 	public void LoginTest() {
+		objLogin = new LoginPage(driver);
 		objLogin.login(utils.webUserName, utils.webPassword);
 		objLogin.clickLogin();
-	}
+		}
 
 
 
