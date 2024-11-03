@@ -6,13 +6,21 @@ I do not own this code. This Tutorial is Originally from https://qaautomation.ex
 <br>
 I'm Modified a litte bit in order to success deploy on my cloning codes.
 
-
+<br>
 add utils. java inside setup folder
+<br>
 package setup;
-
+<be>
+<br>
 public class utils {
+	<br>
 	public static String webUserName = "";
+	<br>
 	public static String webPassword = "";
+	<br>
 	public static String releaseNumber = "";
+	<br>
 	public static String webUrl ="";
+	<br>
 }
+<br>
