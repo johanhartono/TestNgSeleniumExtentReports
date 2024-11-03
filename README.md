@@ -5,3 +5,14 @@ Source of web for Testing: use your own web or authorized web. Do not test any w
 I do not own this code. This Tutorial is Originally from https://qaautomation.expert/2022/08/05/extentreports-version-4-with-selenium-and-testng/#8-execute-the-tests-from-testng-xml
 <br>
 I'm Modified a litte bit in order to success deploy on my cloning codes.
+
+
+add utils. java inside setup folder
+package setup;
+
+public class utils {
+	public static String webUserName = "";
+	public static String webPassword = "";
+	public static String releaseNumber = "";
+	public static String webUrl ="";
+}
