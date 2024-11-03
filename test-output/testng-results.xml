@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="0" failed="0" skipped="17">
+<testng-results ignored="0" total="17" passed="12" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-19T19:29:54 WIB" name="Testing Orang HRM Functionality" finished-at="2024-10-19T19:29:56 WIB" duration-ms="1689">
+  <suite started-at="2024-11-03T21:25:43 WIB" name="Testing Orang HRM Functionality" finished-at="2024-11-03T21:26:44 WIB" duration-ms="61664">
     <groups>
       <group name="Dashboard">
         <method signature="HomePageTests.TestDashBoardLabel()[pri:13, instance:testcases.HomePageTests@93cf163]" name="TestDashBoardLabel" class="testcases.HomePageTests"/>
@@ -26,9 +26,9 @@
         <method signature="HomePageTests.TestNaviLeftMaintenance()[pri:12, instance:testcases.HomePageTests@93cf163]" name="TestNaviLeftMaintenance" class="testcases.HomePageTests"/>
       </group> <!-- Testing Navi Left Menu functionality -->
     </groups>
-    <test started-at="2024-10-19T19:29:54 WIB" name="HomePage Tests" finished-at="2024-10-19T19:29:56 WIB" duration-ms="1689">
+    <test started-at="2024-11-03T21:25:43 WIB" name="HomePage Tests" finished-at="2024-11-03T21:26:44 WIB" duration-ms="61664">
       <class name="testcases.HomePageTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:54 WIB" name="setup" finished-at="2024-10-19T19:29:56 WIB" duration-ms="1546" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:25:43 WIB" name="setup" finished-at="2024-11-03T21:25:49 WIB" duration-ms="6349" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,840 +36,112 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMenu" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:25:49 WIB" name="TestNaviLeftMenu" finished-at="2024-11-03T21:25:53 WIB" duration-ms="3451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenu -->
-        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-10-19T19:29:56 WIB" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:25:53 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-11-03T21:25:56 WIB" duration-ms="2937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuAdmin -->
-        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:25:56 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-11-03T21:25:59 WIB" duration-ms="3091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuPIM -->
-        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:25:59 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-11-03T21:26:01 WIB" duration-ms="2289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuLeave -->
-        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMenuTime" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:01 WIB" name="TestNaviLeftMenuTime" finished-at="2024-11-03T21:26:04 WIB" duration-ms="2881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuTime -->
-        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:04 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-11-03T21:26:08 WIB" duration-ms="4530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuRecruitment -->
-        <test-method signature="TestNaviLeftMenuMyInfo()[pri:6, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMenuMyInfo" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftMenuMyInfo()[pri:6, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:08 WIB" name="TestNaviLeftMenuMyInfo" finished-at="2024-11-03T21:26:12 WIB" duration-ms="3224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuMyInfo -->
-        <test-method signature="TestNaviLeftMenuPerformance()[pri:7, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMenuPerformance" finished-at="2024-10-19T19:29:56 WIB" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftMenuPerformance()[pri:7, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:12 WIB" name="TestNaviLeftMenuPerformance" finished-at="2024-11-03T21:26:15 WIB" duration-ms="3711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuPerformance -->
-        <test-method signature="TestNaviLeftDashboard()[pri:8, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftDashboard" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftDashboard()[pri:8, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:15 WIB" name="TestNaviLeftDashboard" finished-at="2024-11-03T21:26:18 WIB" duration-ms="2345" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftDashboard -->
-        <test-method signature="TestNaviLeftDirectory()[pri:9, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftDirectory" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftDirectory()[pri:9, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:18 WIB" name="TestNaviLeftDirectory" finished-at="2024-11-03T21:26:21 WIB" duration-ms="2865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftDirectory -->
-        <test-method signature="TestNaviLeftClaim()[pri:10, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftClaim" finished-at="2024-10-19T19:29:56 WIB" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftClaim()[pri:10, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:21 WIB" name="TestNaviLeftClaim" finished-at="2024-11-03T21:26:23 WIB" duration-ms="2617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftClaim -->
-        <test-method signature="TestNaviLeftBuzz()[pri:11, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftBuzz" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="TestNaviLeftBuzz()[pri:11, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:23 WIB" name="TestNaviLeftBuzz" finished-at="2024-11-03T21:26:25 WIB" duration-ms="2002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftBuzz -->
-        <test-method signature="TestNaviLeftMaintenance()[pri:12, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestNaviLeftMaintenance" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="TestNaviLeftMaintenance()[pri:12, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:25 WIB" name="TestNaviLeftMaintenance" finished-at="2024-11-03T21:26:30 WIB" duration-ms="4368" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/form/div[3]/div/div[2]/input"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//*[@id="app"]/div[1]/div[1]/form/div[3]/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/form/div[3]/div/div[2]/input"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//*[@id="app"]/div[1]/div[1]/form/div[3]/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at pages.HomePage.naviLeftMaintenance(HomePage.java:151)
+at testcases.HomePageTests.TestNaviLeftMaintenance(HomePageTests.java:108)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -885,52 +157,65 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMaintenance -->
-        <test-method signature="TestDashBoardLabel()[pri:13, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestDashBoardLabel" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="TestDashBoardLabel()[pri:13, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:30 WIB" name="TestDashBoardLabel" finished-at="2024-11-03T21:26:31 WIB" duration-ms="1023" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h6[normalize-space()='Dashboard']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//h6[normalize-space()='Dashboard']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[normalize-space()='Dashboard']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//h6[normalize-space()='Dashboard']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+at pages.HomePage.getDashLabel(HomePage.java:183)
+at testcases.HomePageTests.TestDashBoardLabel(HomePageTests.java:116)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -946,52 +231,65 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDashBoardLabel -->
-        <test-method signature="TestDashBoardDropDownMenu()[pri:14, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestDashBoardDropDownMenu" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="TestDashBoardDropDownMenu()[pri:14, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:31 WIB" name="TestDashBoardDropDownMenu" finished-at="2024-11-03T21:26:32 WIB" duration-ms="1012" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='oxd-userdropdown-tab']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//span[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='oxd-userdropdown-tab']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//span[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at pages.HomePage.dashDropDown(HomePage.java:189)
+at testcases.HomePageTests.TestDashBoardDropDownMenu(HomePageTests.java:121)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -1007,52 +305,65 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDashBoardDropDownMenu -->
-        <test-method signature="TestDashBoardDropDownMenuChangePassword()[pri:16, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestDashBoardDropDownMenuChangePassword" finished-at="2024-10-19T19:29:56 WIB" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="TestDashBoardDropDownMenuChangePassword()[pri:16, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:32 WIB" name="TestDashBoardDropDownMenuChangePassword" finished-at="2024-11-03T21:26:38 WIB" duration-ms="6023" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Change Password']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//a[normalize-space()='Change Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Change Password']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//a[normalize-space()='Change Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at pages.HomePage.dashDropDownChangePassword(HomePage.java:201)
+at testcases.HomePageTests.TestDashBoardDropDownMenuChangePassword(HomePageTests.java:133)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -1068,52 +379,65 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDashBoardDropDownMenuChangePassword -->
-        <test-method signature="TestDashBoardDropDownMenuLogout()[pri:17, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="TestDashBoardDropDownMenuLogout" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="TestDashBoardDropDownMenuLogout()[pri:17, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:38 WIB" name="TestDashBoardDropDownMenuLogout" finished-at="2024-11-03T21:26:44 WIB" duration-ms="6082" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='oxd-userdropdown-tab']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]]]>
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//span[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 129.0.6668.103 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'JOHAN-NB', ip: '192.168.56.1'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='oxd-userdropdown-tab']"}
+  (Session info: chrome=130.0.6723.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --disable-features=Optimiza...], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Command: [bd5dca123b1d71d66d1cd4015d894bcf, findElement {using=xpath, value=//span[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\JOHAN-NB\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53916/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5dca123b1d71d66d1cd4015d894bcf
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at setup.BaseTests.setup(BaseTests.java:30)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at pages.HomePage.dashDropDownLogout(HomePage.java:210)
+at testcases.HomePageTests.TestDashBoardDropDownMenuLogout(HomePageTests.java:140)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -1129,11 +453,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDashBoardDropDownMenuLogout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-10-19T19:29:56 WIB" name="closeBrowser" finished-at="2024-10-19T19:29:56 WIB" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.HomePageTests@93cf163]" started-at="2024-11-03T21:26:44 WIB" name="closeBrowser" finished-at="2024-11-03T21:26:44 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

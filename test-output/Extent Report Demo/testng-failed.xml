@@ -7,14 +7,13 @@
   <test thread-count="5" name="Login Tests(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testrunner.LoginTests">
+      <class name="testcases.LoginTests">
         <methods>
           <include name="closeBrowser"/>
-          <include name="verifyLoginPageTitle"/>
-          <include name="verifyCoyRight"/>
+          <include name="LoginTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testrunner.LoginTests -->
+      </class> <!-- testcases.LoginTests -->
     </classes>
   </test> <!-- Login Tests(failed) -->
 </suite> <!-- Failed suite [Extent Report Demo] -->

@@ -21,6 +21,7 @@
 	</properties>
 
 	<dependencies>
+	
 		<!-- Extent Report -->
 		<dependency>
 			<groupId>com.aventstack</groupId>

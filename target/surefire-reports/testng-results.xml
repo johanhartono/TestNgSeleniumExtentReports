@@ -1,605 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="0" failed="0" skipped="13">
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-22T21:38:33 WIB" name="Extent Report Demo" finished-at="2024-09-22T21:38:33 WIB" duration-ms="72">
+  <suite started-at="2024-11-03T20:48:39 WIB" name="Testing Orang HRM Functionality" finished-at="2024-11-03T20:49:38 WIB" duration-ms="58747">
     <groups>
+      <group name="Dashboard">
+        <method signature="HomePageTests.TestDashBoardLabel()[pri:13, instance:testcases.HomePageTests@5e4bd84a]" name="TestDashBoardLabel" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestDashBoardDropDownMenu()[pri:14, instance:testcases.HomePageTests@5e4bd84a]" name="TestDashBoardDropDownMenu" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestDashBoardDropDownMenuChangePassword()[pri:16, instance:testcases.HomePageTests@5e4bd84a]" name="TestDashBoardDropDownMenuChangePassword" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestDashBoardDropDownMenuLogout()[pri:17, instance:testcases.HomePageTests@5e4bd84a]" name="TestDashBoardDropDownMenuLogout" class="testcases.HomePageTests"/>
+      </group> <!-- Dashboard -->
+      <group name="Testing Navi Left Menu functionality">
+        <method signature="HomePageTests.TestNaviLeftMenu()[pri:0, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMenu" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftMenuAdmin()[pri:1, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMenuAdmin" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftMenuPIM()[pri:2, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMenuPIM" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftMenuLeave()[pri:3, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMenuLeave" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftMenuTime()[pri:4, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMenuTime" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftMenuRecruitment()[pri:5, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMenuRecruitment" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftMenuMyInfo()[pri:6, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMenuMyInfo" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftMenuPerformance()[pri:7, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMenuPerformance" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftDashboard()[pri:8, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftDashboard" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftDirectory()[pri:9, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftDirectory" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftClaim()[pri:10, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftClaim" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftBuzz()[pri:11, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftBuzz" class="testcases.HomePageTests"/>
+        <method signature="HomePageTests.TestNaviLeftMaintenance()[pri:12, instance:testcases.HomePageTests@5e4bd84a]" name="TestNaviLeftMaintenance" class="testcases.HomePageTests"/>
+      </group> <!-- Testing Navi Left Menu functionality -->
     </groups>
-    <test started-at="2024-09-22T21:38:33 WIB" name="HomePage Tests" finished-at="2024-09-22T21:38:33 WIB" duration-ms="72">
-      <class name="testrunner.HomePageTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="setup" finished-at="1970-01-01T07:00:00 WIB" duration-ms="-1727015913341" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2024-11-03T20:48:39 WIB" name="HomePage Tests" finished-at="2024-11-03T20:49:38 WIB" duration-ms="58747">
+      <class name="testcases.HomePageTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:48:39 WIB" name="setup" finished-at="2024-11-03T20:48:43 WIB" duration-ms="3835" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMenu" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMenu()[pri:0, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:48:43 WIB" name="TestNaviLeftMenu" finished-at="2024-11-03T20:48:45 WIB" duration-ms="2239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenu -->
-        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMenuAdmin()[pri:1, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:48:45 WIB" name="TestNaviLeftMenuAdmin" finished-at="2024-11-03T20:48:49 WIB" duration-ms="3900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuAdmin -->
-        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMenuPIM()[pri:2, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:48:49 WIB" name="TestNaviLeftMenuPIM" finished-at="2024-11-03T20:48:53 WIB" duration-ms="3421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuPIM -->
-        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMenuLeave()[pri:3, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:48:53 WIB" name="TestNaviLeftMenuLeave" finished-at="2024-11-03T20:48:55 WIB" duration-ms="2686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuLeave -->
-        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMenuTime" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMenuTime()[pri:4, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:48:55 WIB" name="TestNaviLeftMenuTime" finished-at="2024-11-03T20:48:58 WIB" duration-ms="2513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuTime -->
-        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMenuRecruitment()[pri:5, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:48:58 WIB" name="TestNaviLeftMenuRecruitment" finished-at="2024-11-03T20:49:00 WIB" duration-ms="2536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuRecruitment -->
-        <test-method signature="TestNaviLeftMenuMyInfo()[pri:6, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMenuMyInfo" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMenuMyInfo()[pri:6, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:00 WIB" name="TestNaviLeftMenuMyInfo" finished-at="2024-11-03T20:49:04 WIB" duration-ms="3280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuMyInfo -->
-        <test-method signature="TestNaviLeftMenuPerformance()[pri:7, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMenuPerformance" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMenuPerformance()[pri:7, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:04 WIB" name="TestNaviLeftMenuPerformance" finished-at="2024-11-03T20:49:07 WIB" duration-ms="3541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMenuPerformance -->
-        <test-method signature="TestNaviLeftDashboard()[pri:8, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftDashboard" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftDashboard()[pri:8, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:07 WIB" name="TestNaviLeftDashboard" finished-at="2024-11-03T20:49:09 WIB" duration-ms="2017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftDashboard -->
-        <test-method signature="TestNaviLeftDirectory()[pri:9, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftDirectory" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftDirectory()[pri:9, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:09 WIB" name="TestNaviLeftDirectory" finished-at="2024-11-03T20:49:12 WIB" duration-ms="2894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftDirectory -->
-        <test-method signature="TestNaviLeftClaim()[pri:10, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftClaim" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftClaim()[pri:10, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:12 WIB" name="TestNaviLeftClaim" finished-at="2024-11-03T20:49:14 WIB" duration-ms="2230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftClaim -->
-        <test-method signature="TestNaviLeftBuzz()[pri:11, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftBuzz" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftBuzz()[pri:11, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:14 WIB" name="TestNaviLeftBuzz" finished-at="2024-11-03T20:49:17 WIB" duration-ms="2169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftBuzz -->
-        <test-method signature="TestNaviLeftMaintenance()[pri:12, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="TestNaviLeftMaintenance" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in D:\QA software Tester\eclipse\WorkBench\TestNgSeleniumExtentReports\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="TestNaviLeftMaintenance()[pri:12, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:17 WIB" name="TestNaviLeftMaintenance" finished-at="2024-11-03T20:49:23 WIB" duration-ms="6575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNaviLeftMaintenance -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testrunner.HomePageTests@34f22f9d]" started-at="2024-09-22T21:38:33 WIB" name="closeBrowser" finished-at="2024-09-22T21:38:33 WIB" duration-ms="0" status="SKIP">
+        <test-method signature="TestDashBoardLabel()[pri:13, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:23 WIB" name="TestDashBoardLabel" finished-at="2024-11-03T20:49:24 WIB" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDashBoardLabel -->
+        <test-method signature="TestDashBoardDropDownMenu()[pri:14, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:24 WIB" name="TestDashBoardDropDownMenu" finished-at="2024-11-03T20:49:24 WIB" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDashBoardDropDownMenu -->
+        <test-method signature="TestDashBoardDropDownMenuChangePassword()[pri:16, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:24 WIB" name="TestDashBoardDropDownMenuChangePassword" finished-at="2024-11-03T20:49:32 WIB" duration-ms="8561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDashBoardDropDownMenuChangePassword -->
+        <test-method signature="TestDashBoardDropDownMenuLogout()[pri:17, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:32 WIB" name="TestDashBoardDropDownMenuLogout" finished-at="2024-11-03T20:49:38 WIB" duration-ms="5845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDashBoardDropDownMenuLogout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.HomePageTests@5e4bd84a]" started-at="2024-11-03T20:49:38 WIB" name="closeBrowser" finished-at="2024-11-03T20:49:38 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testrunner.HomePageTests -->
+      </class> <!-- testcases.HomePageTests -->
     </test> <!-- HomePage Tests -->
-  </suite> <!-- Extent Report Demo -->
+  </suite> <!-- Testing Orang HRM Functionality -->
 </testng-results>
